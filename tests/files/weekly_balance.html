@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Wallet – Wallets reports</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+    <body>
+        
+        <div class="pure-g">
+            <div class="pure-u-2-5"></div>
+            <div class="pure-u-1-5">
+
+                
+                  
+                
+            </div>
+        </div>
+        <div class="pure-g">
+            
+    <div class="pure-u-1-5"></div>
+    <div class="pure-u-3-5">
+        
+        <form class="pure-form pure-form-stacked" method="POST">
+            <fieldset>
+                <legend>Report constructor</legend>
+                
+                    
+                    <label for="date_from">Date from</label>
+                    <input id="date_from" name="date_from" required type="date" value="">
+                
+                    
+                    <label for="date_to">Date to</label>
+                    <input id="date_to" name="date_to" required type="date" value="">
+                
+                    
+                    <label for="wallets">Wallets</label>
+                    <select id="wallets" multiple name="wallets" required></select>
+                
+                    
+                    <label for="report_type">Report type</label>
+                    <select id="report_type" name="report_type" required><option value="BIGGEST_EXPENSES">Biggest expenses</option><option value="EXPENSES_BY_WEEKDAY">Expenses by weekday</option><option value="EXPENSES_BY_WEEK">Expenses by week</option><option value="EXPENSES_BY_TYPE">Expenses by type</option><option value="WEEKLY_BALANCE">Weekly balance</option></select>
+                
+                    
+                    <label for="output_format">Display format</label>
+                    <select id="output_format" name="output_format" required><option value="HTML">Html</option><option value="XLSX">Xlsx</option><option value="PDF">Pdf</option></select>
+                
+                
+                <button type="submit" class="pure-button pure-button-primary">Generate report</button>
+            </fieldset>
+        </form>
+        
+    
+        <table class="pure-table">
+            <thead>
+                <tr>
+                    
+                        <th>Week num</th>
+                    
+                        <th>Total expenses</th>
+                    
+                        <th>Total income</th>
+                    
+                        <th>Week balance</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+                    <tr>
+                        
+                            <td>8</td>
+                        
+                            <td>-500</td>
+                        
+                            <td>833</td>
+                        
+                            <td>333</td>
+                        
+                    </tr>
+                
+            </tbody>
+        </table>
+    
+
+    </div>
+
+        </div>
+    </body>
+</html>
